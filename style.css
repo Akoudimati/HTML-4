@@ -49,3 +49,17 @@ h2 {
 p {
   color: #161313;
 }
+
+.pepesad{ 
+  font-size: 25px;
+  margin-bottom: 25px;
+  position: absolute;
+  position: fixed;
+  position: relative;
+
+  bottom: 50px;
+  left:250px;
+  width: 100px;
+  height:100px;
+  /* Add any additional styles for the small image in the corner */
+}
