@@ -1,65 +1,574 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #e0e0e0; 
+/* General styles */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header styles */
 header {
   background-color: #333;
-  color: white;
-  padding: 1px
-
-}
-.heder1{
-
-margin-left: 250px;
-position: relative;
-}
-
-nav ul {
-  list-style-type: none;
- 
-}
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-main {
-  padding: 20px;
-}
-h2 {
-  font-size: 24px;
-}
-
-.hh1  {
-  color: red;
-}
-
-.hh2 {
-  color: blue;
-}
-
-.hh3 {
-  color: green;
-}
-
-p {
-  color: #161313;
-}
-
-.pepesad{ 
-  font-size: 25px;
-  margin-bottom: 25px;
-  position: absolute;
+  width: 100%;
   position: fixed;
-  position: relative;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 200px;
+}
 
-  bottom: 50px;
-  left:250px;
-  width: 100px;
-  height:100px;
-  /* Add any additional styles for the small image in the corner */
+.logo {
+  text-decoration: none;
+  color: #4272d1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+
+.navigation a {
+  color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+.navigation a:hover {
+  color: #601cfc;
+}
+/* Main content styles */
+.main {
+  padding: 60px 0;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(foto/m2.jpeg) no-repeat;
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  font-size: 300%;
+  font-weight: 600;
+  color: #12029e;
+  margin-bottom: 10px;
+}
+
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4e9eff;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.main h3 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #9443ca;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-btn {
+  color: #ffffff;
+  background-color: #9443ca;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  transition: 0.7s ease;
+}
+
+.main-btn:hover {
+  background-color:  #9443ca;
+  tra             mnsform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #8ba1e4;
+  font-size: 1.7em;
+  padding-right: 30px;
+  margin: 0 10px;
+}
+
+/* Motivation section */
+.cards {
+  padding: 10px;
+}
+
+.title {
+  color: #3af462;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  width: 100%;
+  min-width: 25em;
+  max-width: 25em;
+  min-height: 31em;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: transform 0.5s;
+  display: inline-block;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card .icon {
+  color: #3af462;
+  font-size: 8em;
+  text-align: center;
+}
+
+i {
+  text-align: center;
+}
+
+.info h3 {
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #35ec44;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transform: rotateY(180deg);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Projects section */
+.projects {
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #1e1c31;
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.projects .content {
+  margin: 10px;
+}
+.project-card {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 14em;
+  max-height: 80em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px;
+  transition: 0.7s ease;
+  display: inline-block;
+  align-items: center;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+.project-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.project-info {
+  margin-top: 10px;
+  padding: 1em;
+}
+
+.project-category {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #000;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2em;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-logo img {
+  width: 80px;
+  height: auto;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+  margin-right: 20px;
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: #3a6cf4;
+}
+.footer-contact h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-contact p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.footer-social a {
+  color: #fff;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+/* Media queries for extra small devices (phones, less than 320*658) */
+@media screen and (min-width: 150px) and (max-width: 575px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .main {
+    padding: 0 20px;
+  }
+  .main h2 {
+    font-size: 20px;
+  }
+
+  .main h3 {
+    font-size: 14px;
+  }
+
+  .main-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  .card {
+    width: 100%;
+    min-width: 18em;
+    max-width: 18em;
+    min-height: 31em;
+  }
+  .slider {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+
+/* Media queries for small devices (phones, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .main h2 {
+    font-size: 24px;
+  }
+
+  .main h3 {
+    font-size: 16px;
+  }
+
+  .main-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .card {
+    width: 100%;
+    min-width: 20em;
+    max-width: 20em;
+    min-height: 31em;
+  }
+  .slider {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+
+/* Media queries for medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+  .navigation a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .main h2 {
+    font-size: 24px;
+  }
+
+  .main h3 {
+    font-size: 16px;
+  }
+
+  .main-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: calc(50% - 10px);
+  }
+
+  .slider {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+}
+
+/* Media queries for large devices (desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+  .navigation a {
+    margin-left: 12px;
+    font-size: 15px;
+  }
+
+  .card {
+    width: calc(33.3333% - 10px);
+  }
+  .slider {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: calc(50% - 10px);
+  }
+  .main h2 {
+    font-size: 28px;
+  }
+
+  .main h3 {
+    font-size: 18px;
+  }
+
+  .main-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+/* Media queries for extra large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .navigation a {
+    margin-left: 15px;
+    font-size: 16px;
+  }
+
+  .slider {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 250px;
+  }
 }

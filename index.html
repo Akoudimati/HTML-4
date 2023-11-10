@@ -1,52 +1,264 @@
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Mijn Website</title>
-    <style>
-       
-    </style>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <!-- Meta tags and title -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Abdullah Koudimati's personal website showcasing his motivation for an ICT Software Developer program." />
+    <meta
+      name="keywords"
+      content="Abdullah Koudimati, ICT Software Developer, personal website, motivation" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Abdullah koudimati</title>
+    <!-- slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  </head>
+  <body>
+    <!-- Header with logo and navigation -->
     <header>
-        <nav>
-            <ul class="heder1">
-                <li><a href="index.html">home</a></li>
-                <li><a href="/html/projects.html" >Over mij</a></li>
-                <li><a href="/html/projects.html">Projecten</a></li>
-                <li><a href="/html/contact.html" target="_blank">Contact</a></li>
-            </ul>
-        </nav>
+      <a href="#" class="logo">koudimati</a>
+      <nav class="navigation">
+        <a href="#services">vragen</a>
+        <a href="#projects">foto's</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <span class="hamburger-menu" onclick="toggleMenu()">&#9776;</span>
     </header>
+    <!-- Main content -->
     <main>
-        <article class="hh1">
-            
-            <h2>Welcom bij challenge 4 html</h2>
-            <p>heir laat ik jou zien wat heb ik gedaan </p>
-            <p>Ik zit nu in ROC Mondriaan </p>
-            <p>
-              
-            </p>
-        </article>
-        <aside>
-            <h2>m</h2>
-        </aside>
-        <article class="hh2">
-            <h2>Ik ben article 2</h2>
-            <p>>wij zijn nu bezig met privewerk en worden aan het einde van het spel met een probleem geconfronteerd</p>
-            <p>Doel van het project: Maak een interactieve webtoepassing waarbij de gebruiker moet raden of
-                 een willekeurig getal hoger of lager is dan een bepaalde waarde</p>
-            <p>Deze week gaan wij een oplossing voor dit probleem vinden</p>
-        </article>
-        <article class="hh3">
-            <h2>Ik ben article 3</h2>
-            <p></p>
-            <p></p>
-            <p></p>
-             <img   alt="dans" class="pepesad"  src="assets/peepo-dance-sad.gif"  >
-        </article>
+      <!-- Introduction section -->
+      <section class="main">
+        <div>
+          <h2>Hoi, ik ben Abdullah <br /><span>Een student die</span></h2>
+          <h3>graag een ICT software developer opleiding wil volgen</h3>
+          <a href="#services" class="main-btn">mijn Motivatie</a>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100010410124802"
+              ><i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://drive.google.com/drive/folders/1Bk9RehoOeVZRdZwcHaSbudjSw0Qb6C2u?usp=share_link"
+              ><i class="fab fa-google-drive"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Motivation section with flip cards -->
+      <section class="cards" id="services">
+        <h2 class="title">Motivatie</h2>
+        <div class="content">
+          <div class="card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="icon">
+                  <i class="fas fa-edit"></i>
+                </div>
+                <h3>
+                  •Een motivatie en waarom je voor deze opleiding ict 4 softwer
+                  developer hebt gekozen?
+                </h3>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  -Ik heb altijd al interesse gehad in technologie en ben ervan
+                  overtuigd dat deze opleiding me zal helpen mijn carrière in
+                  deze sector op te bouwen Ik heb al enige ervaring met
+                  programmeren en het werken met verschillende tools, maar ik
+                  weet dat er nog veel te leren valt. Ik hoop dat deze opleiding
+                  me zal helpen meer te leren over het ontwikkelen van software
+                  voor echte toepassingen en complexe projecten. ik ben er zeker
+                  van dat deze opleiding me zal voorbereiden op een succesvolle
+                  carrière in de ICT-industrie. Ik ben vastbesloten om hard te
+                  werken en mijn vaardigheden te ontwikkelen.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="icon">
+                  <i class="fas fa-video"></i>
+                </div>
+                <h3>
+                  Wat verwacht je van de opleiding en hoop je te gaan leren?
+                </h3>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  -Ik verwacht dat de opleiding mij een solide basis zal bieden
+                  in programmeertalen en frameworks, me zal helpen bij het
+                  ontwikkelen van mijn probleemoplossende vaardigheden en me zal
+                  voorbereiden op de nieuwste trends in de ICT-industrie. Ik
+                  hoop hands-on ervaring op te doen en te werken aan real-life
+                  projecten om mijn professionele vaardigheden te ontwikkelen en
+                  mijn netwerk uit te breiden.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <div class="icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>
+                  Wat wil je na deze opleiding gaan doen? Doorstuderen of heb je
+                  al een idee waar je gaat werken?
+                </h3>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  -Na het voltooien van mijn opleiding, heb ik momenteel nog
+                  geen definitief besluit genomen over wat ik precies wil gaan
+                  doen. Hoewel ik wellicht overweeg om verder te studeren, heb
+                  ik ook verschillende interesses in de praktische toepassing
+                  van mijn vaardigheden. Ik zal daarom de tijd nemen om
+                  zorgvuldig verschillende mogelijkheden te onderzoeken en de
+                  juiste beslissing te nemen voor mijn toekomst. Ik ben
+                  open-minded en enthousiast om nieuwe kansen te ontdekken en te
+                  groeien in mijn vakgebied, ongeacht waar ik terechtkom.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects section with slider -->
+      <section class="projects" id="projects">
+        <h2 class="title">foto's van mijn computer</h2>
+        <div class="content">
+          <div class="slider">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="foto/m4.jpeg" alt="m4" />
+              </div>
+              <div class="project-info">
+                <p class="project-category">
+                  Intel Core i5 10400f 32 GB RAM 2666HZ 960 ssd m.2
+                </p>
+                <strong class="project-title">
+                  <span>RTX3060 12gb </span>
+                </strong>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="foto/m5.jpeg" alt="m5" />
+              </div>
+              <div class="project-info">
+                <p class="project-category">
+                  HyperX QuadCast Streaming Microfoon
+                </p>
+                <strong class="project-title">
+                  <span>Samsung Odyssey G5 </span>
+                </strong>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="foto/m6.jpeg" alt="m6" />
+              </div>
+              <div class="project-info">
+                <p class="project-category"></p>
+                <strong class="project-title">
+                  <span></span>
+                </strong>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="foto/m1.png" alt="m1" />
+              </div>
+              <div class="project-info">
+                <p class="project-category"></p>
+                <strong class="project-title">
+                  <span></span>
+                </strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    <!-- Footer with logo, links and social media icons -->
+    <footer class="footer">
+      <div class="content">
+        <div class="footer-logo">
+          <img src="foto/m2.png" alt="logo" />
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#services">Motivatie</a>
+            </li>
+            <li>
+              <a href="#projects">Foto's</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p><i class="fas fa-phone"></i> +31685874556</p>
+          <p><i class="fas fa-envelope"></i> Abdullahkoudimati@gmail.com</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/profile.php?id=100010410124802"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://drive.google.com/drive/folders/1Bk9RehoOeVZRdZwcHaSbudjSw0Qb6C2u?usp=share_link"
+            target="blan"
+            ><i class="fab fa-google-drive"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript libraries and initialization -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Initialize the slider -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".slider").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          arrows: true,
+          dots: true,
+        });
+      });
+    </script>
+    <script>
+      function toggleMenu() {
+        const navigation = document.querySelector(".navigation");
+        navigation.style.display =
+          navigation.style.display === "block" ? "none" : "block";
+      }
+    </script>
+  </body>
 </html>
