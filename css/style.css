@@ -58,18 +58,16 @@ header {
 }
 /* Main content styles */
 .main {
-  padding: 60px 0;
-  text-align: center;
-  width: 100%;
-  min-height: 100vh;
+  padding: 130px 0px;
+  text-align: left;
+  width: 56%;
+  min-height: 99vh;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
-  background: url(foto/m2.jpeg) no-repeat;
-  background-size: cover;
-  background-position: right;
-  background-attachment: fixed;
+  background: url(foto/m2.jpeg) right center / cover no-repeat fixed;
 }
+
 
 .main h2 {
   font-size: 300%;
@@ -82,7 +80,7 @@ header {
   display: inline-block;
   margin-top: 10px;
   color: #4e9eff;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 600;
 }
 
@@ -91,13 +89,14 @@ header {
   font-weight: 700;
   color: #9443ca;
   letter-spacing: 1px;
-  margin-top: 10px;
+  margin-top: auto;
   margin-bottom: 30px;
+
 }
 
 .main-btn {
   color: #ffffff;
-  background-color: #9443ca;
+  background-color: #0823b9;
   text-decoration: none;
   font-size: 1.1em;
   font-weight: 600;
@@ -111,12 +110,12 @@ header {
 
 .main-btn:hover {
   background-color:  #9443ca;
-  tra             mnsform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin-top: 20px;
 }
 
@@ -130,10 +129,11 @@ header {
 /* Motivation section */
 .cards {
   padding: 10px;
+  min-height: 100vh
 }
 
 .title {
-  color: #3af462;
+  color: #3ab0f4;
   font-size: 30px;
   font-weight: 800;
   text-align: center;
@@ -261,13 +261,14 @@ i {
 }
 
 .slider {
-  width: 100%;
+  width: 98%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 .projects .content {
   margin: 10px;
+  min-height: 33vh
 }
 .project-card {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
