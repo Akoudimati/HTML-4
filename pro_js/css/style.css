@@ -169,7 +169,7 @@ header {
   transform: scale(1.05);
 }
 .card .icon {
-  color: #3af462;
+  color: #297baa;
   font-size: 8em;
   text-align: center;
 }
@@ -227,7 +227,7 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #35ec44;
+  background-color: #11093f;
   color: #fff;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
