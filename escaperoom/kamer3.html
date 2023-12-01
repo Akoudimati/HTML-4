@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room Puzzle Game</title>
+   <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <button class="myBtn">Regels van kamer 3</button>
+    <div class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Regels van kamer 3</h2>
+            <p>
+              Het doel van het spel is om de 4-cijferige code te vinden en in te voeren om door te gaan naar de volgende kamer.
+            </p>
+        </div>
+    </div>
+    <div class="puzzleContainer">
+        <h1>Vind de Code om te Ontsnappen!</h1>
+        <p>Los de aanwijzingen op om de 4-cijferige code te vinden.</p>
+
+        <!-- Clues for the players -->
+        <div class="clues">
+            <p>-vraag 1: Op welke dag valt halloween (eerste cijfer).</p>
+            <p>-vraag 2: Hoeveel weegt de zwaarste pompoen in kg?</p>
+            <p>-vraag 3: Hoeveel miljard spenderen Amerikanen aan halloween?.</p>
+            <p>-vraag 4: Hoeveel procent van amerikanen vieren elk jaar halloween?.</p>
+        </div>
+
+        <!-- Input for the code -->
+        <input
+            type="text"
+            class="codeInput"
+            placeholder="Enter code..."
+            maxlength="9"
+        />
+        <input type="button" value="Unlock" onclick="checkCode()" />
+
+        <!-- Victory message -->
+        <div class="victoryMessage hidden">
+            <h2>Gefeliciteerd!!</h2>
+            <p>Je hebt de code gevonden, nu mag je naar de volgende kamer!</p>
+            <input class="klaar" type="button" value="Naar Kamer 4" onclick="navigateToKamer4()" />
+        </div>
+    </div>
+    <script src="js/main3.js"></script>
+</body>
+</html>

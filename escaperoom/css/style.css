@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+ 
+ }
+ 
+ #start-button {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+   
+    
+ 
+ 
+ }
+ .text span {
+    opacity: 0;
+ }
+ .text span.revealed {
+    opacity: 1;
+ }
+ .text span.green {
+    color: #27ae60;
+ }
+ .text span.red {
+    color: #ff0000;
+ }
+ 
+ 
+ /* Demo styles */
+ body {
+   
+    background: #3498db;
+    background-image: url(foto/start/startkamer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em;
+    font-family: 'Sora', monospace;
+    font-style: italic
+ 
+ }
+ .text {
+    font-size: 1vw;
+    
+    word-spacing: 0.2em;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1em;
+    border-bottom: 1vw solid #0e6dad;
+    position:relative; 
+    line-height: 1.2em;
+    
+
+ }
+ .corner {
+    position:absolute;
+    width: 2vw;
+    right:2vw;
+    bottom:0;
+    transform: translateY(40%); 
+ }
+ 
+ /* kamer1  */
+ 
