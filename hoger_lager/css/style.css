@@ -1,0 +1,91 @@
+.dices{
+    padding: 10px;
+    column-count: 5;
+    column-fill: balance;
+}
+
+.headings{
+    padding: 10px;
+    column-count: 5;
+    column-fill: balance;
+}
+
+.credits{
+    column-count: 5;
+    column-fill: balance;
+ 
+}
+
+.text-center{
+    
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    color: rgb(24, 2, 2);
+  
+    
+ 
+    
+}
+
+.dices-computer-player{
+    column-count: 2;
+}
+
+.dices-player{
+    column-count: 2;
+}
+
+.message{
+    column-count: 3;
+    column-fill: balance;
+}
+
+.message-box{
+    border: 1px solid black;
+    
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(236, 228, 236);
+}
+
+.controls{
+    
+    padding: 10px;
+    column-count: 6;
+    column-fill: balance;
+}
+
+.dice{
+    font-size: 64pt;
+    background-color: rgb(236, 228, 236);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+   
+   
+    text-align: center;
+  
+
+
+}
+
+button {
+    max-width: 100%; 
+}
+
+body {
+ background-color: rgb(102, 77, 46);
+    
+   
+    
+}
+
+
+    .go-button {
+        padding: 10px;
+       
+        width: 100%;     
+    }
+
+

@@ -1,0 +1,170 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 790px;
+    width: 624px;
+    background-image: url("css/foto/kamer2/kamer2.png");
+    background-size: cover;
+}
+
+
+.vraag-button-kamer2,
+.vraag-button2-kamer2,
+.vraag-button3-kamer2,
+.vraag-button4-kamer2,
+.vraag-button5-kamer2,
+.vraag-button6-kamer2 {
+    width: 200px;
+    height: 50px;
+    margin: 16px;
+    margin-top: 64px;
+    border: none;
+    border-radius: 5px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #f3efed;
+    -webkit-text-stroke: 2px #464463;
+    cursor: pointer;
+    position: relative;
+    top: 48px;
+    background: none;
+    transition: transform ease 0.3s;
+}
+
+
+
+
+
+body {
+    background-image: url(foto/kamer2/kamer2.png);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #572727;
+    
+
+}
+
+
+
+.klaar {
+    position: absolute;
+            right: 32px;
+            top: 32px;
+            border-radius: 16px;
+            cursor: pointer;
+            background-image: url(css/foto/kamer2/kamer3.png);
+            font-size: 24px;
+            font-weight: bold;
+            color: #763a1d;
+            -webkit-text-stroke: 1px #131313;
+            transition: transform ease 0.3s;
+}
+.klaar:hover {
+    transform: scale(1.25);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#myBtn {
+
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+
+
+
+
+}
+
+
+
+
+
