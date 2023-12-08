@@ -157,13 +157,19 @@ header {
   padding: 10px;
   margin: 5px;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 
+              0 0 0.2rem #fff,
+              0 0 0.2rem #fff, 
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe;
   overflow: hidden;
   perspective: 1000px;
   transition: transform 0.5s;
   display: inline-block;
 }
+
 
 .card:hover {
   transform: scale(1.05);
@@ -251,6 +257,7 @@ i {
   font-weight: 400;
   text-align: center;
 }
+
 
 /* Projects section */
 .projects {
@@ -388,7 +395,7 @@ i {
   }
 
   .navigation {
-    display: none;
+   
   }
 
   .hamburger-menu {
@@ -439,10 +446,16 @@ i {
   .logo {
     font-size: 1em;
   }
-
-  .navigation {
-    display: none;
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
   }
+
+  .navigation li {
+    margin-right: 10px;
+  }
+}
 
   .hamburger-menu {
     display: block;
