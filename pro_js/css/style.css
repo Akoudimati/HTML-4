@@ -9,11 +9,14 @@
   scroll-behavior: smooth;
 }
 
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f2f2f2;
+ 
+ 
 }
 
 a {
@@ -60,14 +63,18 @@ header {
 }
 /* Main content styles */
 .main {
-  padding: 130px 0px;
+  padding: 79px 0px;
   text-align: left;
-  width: 56%;
+  width: 39%;
   min-height: 99vh;
   display: flex;
   align-items: baseline;
   justify-content: center;
-  background: url(foto/m2.jpeg) right center / cover no-repeat fixed;
+  background: url(foto/mijn\ foto.jpeg);
+  background-repeat:no-repeat ;
+  background: fixed;
+
+  
 }
 
 
@@ -158,14 +165,7 @@ header {
   border-radius: 10px;
   padding: 10px;
   margin: 5px;
-  background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 
-              0 0 0.2rem #fff,
-              0 0 0.2rem #fff, 
-              0 0 2rem #bc13fe,
-              0 0 0.8rem #bc13fe,
-              0 0 2.8rem #bc13fe,
-              inset 0 0 1.3rem #bc13fe;
+  
   overflow: hidden;
   perspective: 1000px;
   transition: transform 0.5s;
@@ -228,6 +228,7 @@ i {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
 }
 
 .flip-card-back {
@@ -235,7 +236,8 @@ i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #11093f;
+  background-color: #39335e;
+  border: 3px solid black;
   color: #fff;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -282,7 +284,7 @@ i {
 .project-card {
   box-shadow: 0px 0px 10px rgba(26, 23, 23, 0.1);
   background-color: #fff;
-  border: 1px solid #fff;
+  border: 10px solid #022014;
   min-height: 14em;
   max-height: 80em;
   width: 23em;
