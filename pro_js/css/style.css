@@ -8,7 +8,17 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+ .dady{
+  
+  height: auto;
+  width: 368px;
+  margin: 0;
+  position: relative;
+  left: 69%;
+  top: 266px;
+  border-top: 10px solid rgba(1, 8, 12, 0.22);
+  border-radius: 400px 154px 666px;
+ }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -63,19 +73,19 @@ header {
 }
 /* Main content styles */
 .main {
-  padding: 79px 0px;
+  padding: 0px 0px;
   text-align: left;
-  width: 39%;
+  width: 32%;
   min-height: 99vh;
   display: flex;
   align-items: baseline;
   justify-content: center;
-  background: url(foto/mijn\ foto.jpeg);
-  background-repeat:no-repeat ;
-  background: fixed;
 
   
+   
 }
+
+  
 
 
 .main h2 {
@@ -83,6 +93,7 @@ header {
   font-weight: 600;
   color: #12029e;
   margin-bottom: 10px;
+ 
 }
 
 .main h2 span {
@@ -398,9 +409,6 @@ i {
     font-size: 1em;
   }
 
-  .navigation {
-   
-  }
 
   .hamburger-menu {
     display: block;
@@ -492,7 +500,7 @@ i {
   .project-card {
     width: 100%;
   }
-}
+
 
 /* Media queries for medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
