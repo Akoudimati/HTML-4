@@ -4,11 +4,11 @@
 }
 html,
 body {
- height: 100%;  /*   ADD NOG VEEL  */
+  height: 100%; /*   ADD NOG VEEL  */
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(98, 88, 95);
+  background-color: rgb(71, 47, 63);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -16,25 +16,24 @@ body {
   align-items: center;
   overflow: hidden;
   cursor: none;
-
 }
 .score {
   font-size: 4em;
   margin-bottom: 0.5em;
 }
 .board {
-  height: 400px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 80px;
+  gap: 20px;
 }
 .hole {
-  background-color: rgb(165, 85, 11);
+  background-color: rgb(11, 165, 44);
   border-radius: 50%;
-  box-shadow: inset 0 10px 0 7px rgb(53, 21, 6),
-    inset 0 20px 20px 15px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 10px 0 7px rgb(59, 26, 3),
+    inset 0 20px 20px 15px rgba(187, 5, 5, 0.3), 0 0 5px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
 }
@@ -46,7 +45,7 @@ body {
   bottom: 0;
   animation: rise 0.3s ease-out;
 }
-.hamer{
+.hamer {
   display: block;
   font-size: 1.5em;
   margin-block-start: -0.4em;
@@ -55,7 +54,6 @@ body {
   margin-inline-end: 0px;
   font-weight: bold;
   background-color: #f9f9f9;
-  
 }
 @keyframes rise {
   0% {
@@ -81,6 +79,20 @@ body {
 .cursor.active {
   transform: translate(-20%, -20%) rotate(-90deg);
 }
+.bomb {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  user-select: none;
+}
 
 .modal {
   display: none;
@@ -94,25 +106,25 @@ body {
   overflow: auto;
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.4);
-  
+  user-select: none;
 }
 
-/* Modal Content */
 .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  
+  font-size: x-large;
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 54px;
   font-weight: bold;
+  margin-top: -16px;
 }
 
 .close:hover,
@@ -121,24 +133,18 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
-#myBtn{
-   
-position: fixed;
-bottom: 0;
-left: 50%;
-transform: translateX(-50%);
-height: 50px;
-font-size: 20px;
-padding: 10px 20px;
-cursor: pointer;
-border-radius: 5px;
-border: 1px solid #000;
-background-color: #fff;
-color: #000;
-transition: all 0.3s ease-in-out;
-
-
-
-
+#myBtn {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease-in-out;
 }
-
