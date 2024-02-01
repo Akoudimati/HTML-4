@@ -416,10 +416,10 @@ i {
     cursor: pointer;
   }
   .main {
-    padding: 0 20px;
+    padding: 200px 200px;
   }
   .main h2 {
-    font-size: 20px;
+    font-size: 20pxx;
   }
 
   .main h3 {
@@ -444,6 +444,9 @@ i {
   .project-card {
     width: 100%;
   }
+  .dady {
+    display: none;
+    }
 }
 
 /* Media queries for small devices (phones, 576px and up) */
@@ -454,7 +457,9 @@ i {
     align-items: center;
     padding: 10px 20px;
   }
-
+  .main {
+    padding: 200px 200px;
+  }
   .logo {
     font-size: 1em;
   }
@@ -467,6 +472,9 @@ i {
   .navigation li {
     margin-right: 10px;
   }
+  .dady {
+    display: none;
+    }
 }
 
   .hamburger-menu {
@@ -500,6 +508,7 @@ i {
   .project-card {
     width: 100%;
   }
+
 
 
 /* Media queries for medium devices (tablets, 768px and up) */
@@ -650,4 +659,8 @@ i {
   .project-card {
     width: 250px;
   }
+ 
 }
+
+
+
