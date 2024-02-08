@@ -248,7 +248,7 @@ i {
   justify-content: center;
   align-items: center;
   background-color: #39335e;
-  border: 3px solid black;
+  border: 3px solid rgb(10, 9, 9);
   color: #fff;
   padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
