@@ -16,6 +16,4 @@ document.querySelector('.escaperoom').addEventListener('click', function () {
   document.querySelector('.pokedex').addEventListener('click', function () {
     window.location.href = '../challenge-pokedex-js/index.html';
   });
-  document.querySelector('escaperoom').addEventListener('click', function () {
-    window.location.href = '../escaperoom/index.html';
-  });
+
