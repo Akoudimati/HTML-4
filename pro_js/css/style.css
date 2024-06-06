@@ -41,15 +41,19 @@ a {
 
 /* Header styles */
 header {
-  background-color: #333;
+  background-color: #333333f3;
   width: 100%;
+  height: 8%;
   position: fixed;
   z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 200px;
+  padding: 10px;
+  padding-left: 187px;
+  padding-right: 156px;
 }
+
 
 .logo {
   text-decoration: none;
@@ -58,14 +62,24 @@ header {
   font-weight: 700;
   font-size: 1.8em;
 }
+ 
+.navigation ul{
+  list-style: none;
+}
+
+.navigation li {
+  display: inline;
+  font-size: 1.4em;
+}
 
 .navigation a {
   color: #3a6cf4;
   text-decoration: none;
-  font-size: 1.1em;
+
   font-weight: 500;
   padding-left: 30px;
   margin-left: 20px;
+
 }
 
 .navigation a:hover {
