@@ -1,0 +1,21 @@
+.card {
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+    padding: 20px; /* Increase padding to make the card bigger */
+}
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.card-body {
+    font-size: 1.2rem; /* Increase font size */
+}
+.icon {
+    width: 70px; /* Increase icon size */
+    height: 70px;
+}
+.middle-image {
+    height: 300px; /* Set a larger height for the middle image */
+}
+.middle-image-container {
+    padding: 50px; /* Increase padding around the middle image */
+}

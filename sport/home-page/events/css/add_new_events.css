@@ -1,0 +1,8 @@
+.event-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.table-responsive {
+    margin-top: 2rem;
+}
