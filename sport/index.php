@@ -54,7 +54,7 @@ if (!$isLoggedIn) {
         }
         .main-image {
             height: 300px;
-            background-image: url('photo/pexels-pixabay-459277.jpg');
+            background-image: url('https://taashisartpractice.wordpress.com/wp-content/uploads/2021/08/9c1cbe9f-48f0-4e24-893c-310c938af88e.jpeg?w=2000&h=');
             background-size: cover;
             background-position: center;
         }
@@ -94,7 +94,7 @@ if (!$isLoggedIn) {
                                 <a href="home-page/contact/contact.php" class="nav-link">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../sd23-p01-reviewyourexperience-k-a/home-page/events/events.php" class="nav-link">Events</a>
+                                <a href="../sport/home-page/events/events.php" class="nav-link">Events</a>
                             </li>
                             <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === true): ?>
                                 <!-- Dropdown voor Admin-links -->
@@ -103,13 +103,12 @@ if (!$isLoggedIn) {
                                         Admin Panel
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="adminDropdown">
-                                        <li><a class="dropdown-item" href="home-page/admin/dashboard.php">Dashboard</a></li>
-                                        <li><a class="dropdown-item" href="home-page/admin/notifications.php">Notifications</a></li>
-                                        <li><a class="dropdown-item" href="home-page/admin/statistics.php">Statistics</a></li>
+
+
                                         <li><a class="dropdown-item" href="home-page/admin/admin_messages.php">User Messages</a></li>
                                         <li><a class="dropdown-item" href="home-page/admin/admin_editor.php">Admin Room</a></li>
-                                        <li><a class="dropdown-item" href="../sd23-p01-reviewyourexperience-k-a/home-page/events/add_new_events.php">Add Events</a></li>
-                                        <li><a class="dropdown-item" href="../sd23-p01-reviewyourexperience-k-a/home-page/events/see_order.php">orders</a></li>
+                                        <li><a class="dropdown-item" href="../sport/home-page/events/add_new_events.php">Add Events</a></li>
+                                        <li><a class="dropdown-item" href="home-page/events/see_order.php">orders</a></li>
                                     </ul>
                                 </li>
                             <?php endif; ?>
@@ -141,7 +140,7 @@ if (!$isLoggedIn) {
                                 <!-- Alleen tonen als gebruiker geen admin is -->
                                 <?php if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !== true): ?>
                                     <li class="nav-item">
-                                        <a href="../../sd23-p01-reviewyourexperience-k-a/home-page/log-in/user_profiel.php" class="btn btn-primary me-2">My Profile</a>
+                                        <a href="home-page/log-in/user_profiel.php" class="btn btn-primary me-2">My Profile</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="home-page/events/my_order.php" class="btn btn-outline-success me-2">Orders</a>
@@ -178,7 +177,7 @@ if (!$isLoggedIn) {
 
     <div class="row">
         <?php foreach ($cars as $car): ?>
-            <div class="col-md-3 mb-4">
+            <div class="col-md-6 mb-4">
                 <div class="card h-100">
                     <!-- Productafbeelding instellen als achtergrondafbeelding -->
                     <div class="product-image card-img-top" style="background-image: url('<?= htmlspecialchars($car['img']) ?>');"></div>

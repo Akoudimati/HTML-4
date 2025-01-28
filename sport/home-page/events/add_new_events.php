@@ -81,7 +81,7 @@ $result = $conn->query("SELECT * FROM events");
                         <a href="../../home-page/log-in/register.php" type="button" class="btn btn-outline-danger">Register</a>
                     <?php else: ?>
                         <a href="?action=logout" class="btn btn-outline-danger">Log Out</a>
-                        <a href="../../../sd23-p01-reviewyourexperience-k-a/home-page/log-in/user_profiel.php" class="btn btn-outline-primary">Mijn Profiel</a>
+                        <a href="../../home-page/log-in/user_profiel.php" class="btn btn-outline-primary">Mijn Profiel</a>
                     <?php endif; ?>
                 </nav>
             </div>

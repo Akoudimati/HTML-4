@@ -44,13 +44,13 @@ $isLoggedIn = isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true;
                         <ul class="navbar-nav">
                             <!-- Algemene links -->
                             <li class="nav-item">
-                                <a href="../../../sd23-p01-reviewyourexperience-k-a/index.php" class="nav-link">Sportcenter</a>
+                                <a href="../../index.php" class="nav-link">Sportcenter</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../../../sd23-p01-reviewyourexperience-k-a/home-page/contact/contact.php" class="nav-link">Contact</a>
+                                <a href="../../home-page/contact/contact.php" class="nav-link">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../../../sd23-p01-reviewyourexperience-k-a/home-page/events/events.php" class="nav-link">Events</a>
+                                <a href="../../home-page/events/events.php" class="nav-link">Events</a>
                             </li>
                             <?php if (isset($_SESSION['is_admin']) && $_SESSION['is_admin'] === true): ?>
                                 <!-- Dropdown voor Admin-links -->
@@ -59,13 +59,12 @@ $isLoggedIn = isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true;
                                         Admin Panel
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="adminDropdown">
-                                        <li><a class="dropdown-item" href="../../../sd23-p01-reviewyourexperience-k-a/home-page/admin/dashboard.php">Dashboard</a></li>
-                                        <li><a class="dropdown-item" href="../../../sd23-p01-reviewyourexperience-k-a/home-page/admin/notifications.php">Notifications</a></li>
-                                        <li><a class="dropdown-item" href="../../../sd23-p01-reviewyourexperience-k-a/home-page/admin/statistics.php">Statistics</a></li>
-                                        <li><a class="dropdown-item" href="../../../sd23-p01-reviewyourexperience-k-a/home-page/admin/admin_messages.php">User Messages</a></li>
-                                        <li><a class="dropdown-item" href="../../../sd23-p01-reviewyourexperience-k-a/home-page/admin/admin_editor.php">Admin Room</a></li>
-                                        <li><a class="dropdown-item" href="../../../sd23-p01-reviewyourexperience-k-a/home-page/events/add_new_events.php">Add Events</a></li>
-                                        <li><a class="dropdown-item" href="../../../sd23-p01-reviewyourexperience-k-a/home-page/events/see_order.php">orders</a></li>
+                                        <li><a class="dropdown-item" href="../../home-page/admin/dashboard.php">Dashboard</a></li>
+
+                                        <li><a class="dropdown-item" href="../../home-page/admin/admin_messages.php">User Messages</a></li>
+                                        <li><a class="dropdown-item" href="../../home-page/admin/admin_editor.php">Admin Room</a></li>
+                                        <li><a class="dropdown-item" href="../../home-page/events/add_new_events.php">Add Events</a></li>
+                                        <li><a class="dropdown-item" href="../../home-page/events/see_order.php">orders</a></li>
                                     </ul>
                                 </li>
                             <?php endif; ?>
@@ -84,10 +83,10 @@ $isLoggedIn = isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true;
                             <?php if (!$isLoggedIn): ?>
                                 <!-- Login- en registratielinks voor niet-ingelogde gebruikers -->
                                 <li class="nav-item">
-                                    <a href="../../../sd23-p01-reviewyourexperience-k-a/home-page/log-in/log-in.php" class="btn btn-outline-light me-2">Login</a>
+                                    <a href="../../home-page/log-in/log-in.php" class="btn btn-outline-light me-2">Login</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../../../sd23-p01-reviewyourexperience-k-a/home-page/log-in/register.php" class="btn btn-danger">Register</a>
+                                    <a href="../../home-page/log-in/register.php" class="btn btn-danger">Register</a>
                                 </li>
                             <?php else: ?>
                                 <li class="nav-item">
@@ -96,10 +95,10 @@ $isLoggedIn = isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true;
                                 <!-- Alleen tonen als gebruiker geen admin is -->
                                 <?php if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] !== true): ?>
                                     <li class="nav-item">
-                                        <a href="../../../sd23-p01-reviewyourexperience-k-a/home-page/log-in/user_profiel.php" class="btn btn-primary me-2">My Profile</a>
+                                        <a href="../../home-page/log-in/user_profiel.php" class="btn btn-primary me-2">My Profile</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="../../../sd23-p01-reviewyourexperience-k-a/home-page/events/my_order.php" class="btn btn-outline-success me-2">Orders</a>
+                                        <a href="../../home-page/events/my_order.php" class="btn btn-outline-success me-2">Orders</a>
                                     </li>
                                 <?php endif; ?>
                             <?php endif; ?>

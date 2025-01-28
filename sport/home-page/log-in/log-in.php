@@ -123,6 +123,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             Heb je geen account? <a href="../../home-page/log-in/register.php">Registreer</a>
         </div>
     </form>
+
 </div>
+<H5>HERE you can log in as an admin to see what the admin can do <br>
+    </small></H5>
+<div>((((
+    admin )))) <br>
+   ((( 123        )))
+</div>
+
+
+</H5>
 </body>
 </html>
