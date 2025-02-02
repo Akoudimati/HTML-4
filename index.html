@@ -1,48 +1,59 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-Meta tags and title -->
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Abdullah Koudimati's personal website showcasing his motivation for an ICT Software Developer program." />
+  <meta name="description"content="Abdullah Koudimati's personal website showcasing his motivation for an ICT Software Developer program." />
   <meta name="keywords" content="Abdullah Koudimati, ICT Software Developer, personal website, motivation" />
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="pro_js/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <title>Abdullah koudimati</title>
-  <!-- slider CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    
+  <link rel="stylesheet" type="text/css"href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
   
   <!-- Header with logo and navigation -->
-  <header>
-    <a href="#" class="logo">Home</a>
-    <nav class="navigation">
-      <ul>
-        <a href="#overmijn">
-          <li>over mij</li>
-        </a>
-        <a href="#projects"> 
-          <li>projecten</li>
-          </a>
-          <a href="/pro_js/html/contact.html">
-            <li>Contacten</li>
-          </a>
-          <a href="Bootstrap.html">
-            <li>bootstrap</li>
-          </a>
-        </ul>
-      </nav>
-    </header>
-   
+
+
+<div class="spacer" style="height: 76px;"></div>
+
+<!-- Modified header with fixed-top class -->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark py-3 shadow fixed-top">
+  <div class="container">
+    <!-- Logo/Brand -->
+    <a href="#" class="navbar-brand fw-bold">Home</a>
+    
+    <!-- Hamburger button for mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Navigation items -->
+    <nav class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="#overmijn" class="nav-link">Over mij</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projecten</a>
+        </li>
+        <li class="nav-item">
+          <a href="/pro_js/html/contact.html" class="nav-link">Contacten</a>
+        </li>
+        <li class="nav-item">
+          <a href="Bootstrap.html" class="nav-link">Bootstrap</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
   <!-- Main content -->
 
   <main>
@@ -59,22 +70,20 @@ Meta tags and title -->
     <!-- Introduction section -->
     <section class="main">
       <div>
-
-
-        <h2 >Hoi, ik ben
+        <h2>Hoi, ik ben
           Abdullah koudimati<br /><span>Een  ICT Student </span></h2>
         <h3>Bij ROC Mondriaan </h3>
 
         <a href="#services" class="main-btn">over mij</a>
         <div class="social-icons">
           <a href="https://github.com/Akoudimati" target="_blank"><i class="fab fa-github"></i>
-
           </a>
-          <a href="https://drive.google.com/drive/folders/1Bk9RehoOeVZRdZwcHaSbudjSw0Qb6C2u?usp=share_link"><i
+          <a href="pro_js/cv van A, koudimati (1).pdf" target="_blank" download><i
               class="fab fa-google-drive"></i>
           </a>
         </div>
       </div>
+</section>
 
  
       <!-- Motivation section with flip cards -->
@@ -170,14 +179,14 @@ Meta tags and title -->
           
           <div class="project-card">
             <div class="project-image">
-              <a href="../boodsc/index.html">
-                <img src="pro_js/css/foto/bood.png" alt="m5" class="boodschappen2">
+              <a href="https://akoudimati.github.io/joep/">
+                <img src="pro_js/css/foto/image2.png" alt="m5" class="boodschappen2">
               </a>
             </div>
             <div class="project-info">
               <p class="project-category"></p>
               <strong class="project-title">
-                <span>boodschappen</span>
+                <span>MBO Carrièrestart</span>
               </strong>
             </div>
           </div>
